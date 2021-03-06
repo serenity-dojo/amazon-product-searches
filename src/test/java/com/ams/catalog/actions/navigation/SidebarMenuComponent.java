@@ -9,4 +9,11 @@ class SidebarMenuComponent {
     static String categoryEntry(String categoryName) {
         return "//a[@class='hmenu-item'][.='" + categoryName + "']";
     }
+    static String departmentEntry(String departmentName){
+        return "//a[@class='hmenu-item'][.='"+ departmentName +"']";
+    }
+
+     static String brandEntry(String brandNameValue) {
+        return "#p_89\\/"+brandNameValue+" > span";
+    }
 }

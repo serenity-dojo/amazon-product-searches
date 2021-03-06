@@ -10,7 +10,9 @@ Feature: Search Amazon catalog by category
       | Home, Garden, Pets & DIY | Pet Supplies |
     And she chooses the following category in the menu bar:
       | Category | Subcategory |
-      | Dogs     | Food        |
+      | Dogs     | food        |
     And she filters the products by:
-      | Brand  | Pedigree |
+      | Brand  |
+      |Pedigree|
+
     Then the displayed products should include "Pedigree Small Bite Mixer Original 1.5kg"
